@@ -22,5 +22,7 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends python3
 RUN apt-get update
 RUN apt-get install -y python3-pip
-RUN pip3 install mysql-connector-python
-RUN pip3 install requests
+#RUN pip3 install mysql-connector-python
+#RUN pip3 install requests
+RUN pip3 install mysql-connector-python==8.3.0
+RUN pip3 install requests==2.31.0

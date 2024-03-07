@@ -2,7 +2,12 @@ FROM python:3
 
 WORKDIR /usr/src/app
 
-RUN pip3 install mysqlclient
-RUN pip3 install mysql-connector-python
-RUN pip3 install flask
-RUN pip3 install requests
+#RUN pip3 install mysqlclient
+#RUN pip3 install mysql-connector-python
+#RUN pip3 install flask
+#RUN pip3 install requests
+
+RUN pip3 install mysqlclient==2.2.4
+RUN pip3 install mysql-connector-python==8.3.0
+RUN pip3 install flask==3.0.2
+RUN pip3 install requests==2.31.0
